@@ -1,0 +1,1707 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="교육 공공데이터와 생성형 AI를 활용하여 실생활 문제를 발견하고, 팀 기반 아이디어 기획서를 완성하는 12차시 프로젝트 중심 교육자료입니다. 제8회 교육 공공데이터 AI 활용대회 참가를 목표로, 데이터 탐색부터 AI 솔루션 설계, 기획서 발표까지 전 과정을 단계별로 안내합니다.">
+      
+      
+        <meta name="author" content="Created with EduFlow">
+      
+      
+      
+        <link rel="prev" href="../chapter10/">
+      
+      
+        <link rel="next" href="../chapter12/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+    
+    
+      
+        <title>피드백으로 갈고닦기 — 기획서 최종 완성 - 우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans KR";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복" class="md-header__button md-logo" aria-label="우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              피드백으로 갈고닦기 — 기획서 최종 완성
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter01/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 1 - [1권] Part 1. 출발 — 데이터로 세상 보기
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter04/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 2 - [1권] Part 2. 탐색 — 데이터를 찾고 읽고 연결하기
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter07/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 3 - [2권] Part 3. 설계 — 아이디어를 서비스로 만들기
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../chapter10/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 4 - [2권] Part 4. 완성 — 기획서를 쓰고, 발표하고, 제출하다
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복" class="md-nav__button md-logo" aria-label="우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 1 - [1권] Part 1. 출발 — 데이터로 세상 보기
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 1 - [1권] Part 1. 출발 — 데이터로 세상 보기
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    공공데이터, 이미 우리 곁에 있다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    데이터는 흐른다 — 수집에서 AI까지
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    우리 팀의 문제를 정의하라
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 2 - [1권] Part 2. 탐색 — 데이터를 찾고 읽고 연결하기
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 2 - [1권] Part 2. 탐색 — 데이터를 찾고 읽고 연결하기
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    교육 공공데이터, 어디에 뭐가 있을까
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    데이터가 말해주는 이야기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI는 여기서 어떻게 쓸 수 있을까
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 3 - [2권] Part 3. 설계 — 아이디어를 서비스로 만들기
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 3 - [2권] Part 3. 설계 — 아이디어를 서비스로 만들기
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    누가, 언제, 어떻게 쓸까 — 서비스 시나리오 설계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    생성형 AI, 기획의 날개를 달다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    데이터를 눈에 보이게 — 시각화의 힘
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 4 - [2권] Part 4. 완성 — 기획서를 쓰고, 발표하고, 제출하다
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 4 - [2권] Part 4. 완성 — 기획서를 쓰고, 발표하고, 제출하다
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PPT 15매, 구조가 답이다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    피드백으로 갈고닦기 — 기획서 최종 완성
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    피드백으로 갈고닦기 — 기획서 최종 완성
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 이 장에서 배우는 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 핵심 개념
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 핵심 개념">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-structured-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 1: 구조적 피드백 (Structured Feedback)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 2: 피드백 분류법 (수용·보류·반려)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔨 따라하기: 피드백 세션 5단계
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기: 피드백 세션 5단계">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: 피드백 루브릭 확인하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: 다른 팀 기획서 읽고 피드백 작성하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 받은 피드백을 수용·보류·반려로 분류하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 수용 항목 반영하여 기획서 수정하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: 최종 체크리스트로 마무리하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 전체 흐름 정리
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 주의할 점
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 점검하기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 다음 장 미리보기
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    무대 위의 3분 — 발표와 대회 제출
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 이 장에서 배우는 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 핵심 개념
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 핵심 개념">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-structured-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 1: 구조적 피드백 (Structured Feedback)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 2: 피드백 분류법 (수용·보류·반려)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔨 따라하기: 피드백 세션 5단계
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기: 피드백 세션 5단계">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: 피드백 루브릭 확인하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: 다른 팀 기획서 읽고 피드백 작성하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 받은 피드백을 수용·보류·반려로 분류하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 수용 항목 반영하여 기획서 수정하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: 최종 체크리스트로 마무리하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 전체 흐름 정리
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 주의할 점
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 점검하기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 다음 장 미리보기
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">피드백으로 갈고닦기 — 기획서 최종 완성<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p><strong>Part 4. 완성 — 기획서를 쓰고, 발표하고, 제출하다 | 11차시 (50분)</strong></p>
+<hr />
+<h2 id="_2">🎯 이 장에서 배우는 것<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 다른 팀의 기획서를 심사 기준(루브릭)에 따라 <strong>구조적으로 피드백</strong>할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 받은 피드백을 <strong>수용·보류·반려</strong>로 분류하고 수정 계획을 세울 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 최종 체크리스트를 활용하여 <strong>기획서 최종본을 완성</strong>할 수 있다</li>
+</ul>
+<hr />
+<h2 id="_3">📚 핵심 개념<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1-structured-feedback">개념 1: 구조적 피드백 (Structured Feedback)<a class="headerlink" href="#1-structured-feedback" title="Permanent link">&para;</a></h3>
+<p><strong>1. 비유로 시작</strong></p>
+<blockquote>
+<p>💡 구조적 피드백은 마치 <strong>건강검진표</strong>와 같아요. 의사가 "어딘가 안 좋아 보여요"라고 말하면 막막하지만, "혈압이 정상 범위보다 10 높으니 운동량을 늘려보세요"라고 말하면 바로 행동할 수 있죠. 기획서 피드백도 마찬가지입니다.</p>
+</blockquote>
+<p><strong>2. 정확한 정의</strong></p>
+<p>구조적 피드백이란, <strong>정해진 기준(루브릭)에 따라</strong> 구체적인 근거와 개선 방향을 함께 제시하는 피드백 방식입니다. "좋다/나쁘다" 같은 느낌이 아니라, <strong>어디가·왜·어떻게</strong>를 담아야 합니다.</p>
+<p><strong>3. 예시로 확인</strong></p>
+<ul>
+<li>❌ 비효과적: <em>"데이터 부분이 좀 약한 것 같아요"</em></li>
+<li>✅ 효과적: <em>"3페이지 그래프의 출처가 빠져 있어요. 통계청 원자료 링크를 추가하면 신뢰도가 높아질 것 같습니다"</em></li>
+</ul>
+<blockquote>
+<p>🔍 <strong>알아보기</strong>: 효과적인 피드백의 3요소
+- <strong>위치</strong> — 몇 페이지, 어떤 문장인지 콕 집기
+- <strong>근거</strong> — 왜 문제인지 이유 설명하기
+- <strong>제안</strong> — 구체적인 개선 방법 제시하기</p>
+</blockquote>
+<hr />
+<h3 id="2">개념 2: 피드백 분류법 (수용·보류·반려)<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p><strong>1. 비유로 시작</strong></p>
+<blockquote>
+<p>💡 피드백을 받는 것은 마치 <strong>택배 상자를 여는 것</strong>과 같아요. 주문한 물건(타당한 지적)은 바로 꺼내 쓰고, 잘못 온 물건(우리 기획 방향과 다른 의견)은 반송하고, 확인이 필요한 물건(추가 조사가 필요한 제안)은 잠시 보관하죠.</p>
+</blockquote>
+<p><strong>2. 정확한 정의</strong></p>
+<p>받은 피드백을 세 가지로 나누는 의사결정 방법입니다.</p>
+<ul>
+<li><strong>수용</strong> 🟢 — 타당하므로 바로 반영한다</li>
+<li><strong>보류</strong> 🟡 — 일리 있지만, 추가 논의나 조사가 필요하다</li>
+<li><strong>반려</strong> 🔴 — 우리 기획 의도와 맞지 않아 반영하지 않는다 (단, 이유를 기록)</li>
+</ul>
+<p><strong>3. 예시로 확인</strong></p>
+<blockquote>
+<p>피드백: <em>"타겟 사용자를 초등학생에서 중학생으로 바꾸면 어떨까요?"</em></p>
+<ul>
+<li>🟢 수용: 실제로 설문 데이터가 중학생 응답이 더 많았다면</li>
+<li>🟡 보류: 데이터를 다시 확인해봐야 판단 가능하다면</li>
+<li>🔴 반려: 처음부터 초등학생 대상으로 문제를 정의했고 근거가 충분하다면</li>
+</ul>
+<p>💬 <strong>생각해보기</strong>: 반려한다고 해서 "틀린 피드백"은 아닙니다. <strong>왜 반려했는지 이유를 기록</strong>하는 것이 핵심입니다. 이유 없는 반려는 그냥 무시이고, 이유 있는 반려는 팀의 판단력을 보여줍니다.</p>
+</blockquote>
+<hr />
+<h2 id="5">🔨 따라하기: 피드백 세션 5단계<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h3 id="step-1">Step 1: 피드백 루브릭 확인하기<a class="headerlink" href="#step-1" title="Permanent link">&para;</a></h3>
+<p>기획서를 읽기 전, 다음 5가지 평가 기준을 먼저 숙지합니다.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>[피드백 루브릭 5개 항목]
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>① 문제 명확성 — 해결할 문제가 구체적으로 정의되었는가?
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>② 데이터 활용도 — 주장을 뒷받침하는 데이터가 충분한가?
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>③ AI 적합성 — AI가 이 문제에 적합한 해결 수단인가?
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>④ 실현 가능성 — 시간·비용·기술 측면에서 현실적인가?
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>⑤ 발표 자료 완성도 — 슬라이드 구성, 가독성이 적절한가?
+</span></code></pre></div>
+<blockquote>
+<p>각 항목을 <strong>상(3점)·중(2점)·하(1점)</strong>으로 평가하되, 반드시 <strong>한 줄 이상 개선 제안</strong>을 적어야 합니다.</p>
+</blockquote>
+<hr />
+<h3 id="step-2">Step 2: 다른 팀 기획서 읽고 피드백 작성하기<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
+<p>포스트잇(또는 메모장)에 다음 형식으로 작성합니다.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>[피드백 작성 형식]
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>📍 위치: ○페이지 / ○번째 문단(또는 슬라이드 번호)
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>📋 항목: (루브릭 5개 중 해당 항목)
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>💬 내용: (구체적 지적 + 개선 제안)
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>--- 예시 ---
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>📍 위치: 5페이지, 기대효과 슬라이드
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>📋 항목: ② 데이터 활용도
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>💬 내용: &quot;학생 70%가 어려움을 느낀다&quot;는 수치의 출처가 없습니다. 
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>   설문 결과라면 응답자 수와 조사 시기를 추가해주세요.
+</span></code></pre></div>
+<hr />
+<h3 id="step-3">Step 3: 받은 피드백을 수용·보류·반려로 분류하기<a class="headerlink" href="#step-3" title="Permanent link">&para;</a></h3>
+<p>팀원이 함께 모여 받은 피드백을 하나씩 읽으며 분류합니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># 피드백 분류를 정리하는 간단한 코드</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">feedbacks</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="p">{</span><span class="s2">&quot;내용&quot;</span><span class="p">:</span> <span class="s2">&quot;5페이지 데이터 출처 누락&quot;</span><span class="p">,</span> <span class="s2">&quot;분류&quot;</span><span class="p">:</span> <span class="s2">&quot;수용&quot;</span><span class="p">,</span> <span class="s2">&quot;조치&quot;</span><span class="p">:</span> <span class="s2">&quot;통계청 링크 추가&quot;</span><span class="p">},</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="p">{</span><span class="s2">&quot;내용&quot;</span><span class="p">:</span> <span class="s2">&quot;타겟을 중학생으로 변경 제안&quot;</span><span class="p">,</span> <span class="s2">&quot;분류&quot;</span><span class="p">:</span> <span class="s2">&quot;반려&quot;</span><span class="p">,</span> <span class="s2">&quot;이유&quot;</span><span class="p">:</span> <span class="s2">&quot;초등학생 대상 설문 근거 충분&quot;</span><span class="p">},</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="p">{</span><span class="s2">&quot;내용&quot;</span><span class="p">:</span> <span class="s2">&quot;AI 모델 비용 추정 필요&quot;</span><span class="p">,</span> <span class="s2">&quot;분류&quot;</span><span class="p">:</span> <span class="s2">&quot;보류&quot;</span><span class="p">,</span> <span class="s2">&quot;조치&quot;</span><span class="p">:</span> <span class="s2">&quot;API 가격 조사 후 결정&quot;</span><span class="p">},</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">]</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">fb</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">feedbacks</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="n">status</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;수용&quot;</span><span class="p">:</span> <span class="s2">&quot;🟢&quot;</span><span class="p">,</span> <span class="s2">&quot;보류&quot;</span><span class="p">:</span> <span class="s2">&quot;🟡&quot;</span><span class="p">,</span> <span class="s2">&quot;반려&quot;</span><span class="p">:</span> <span class="s2">&quot;🔴&quot;</span><span class="p">}</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">status</span><span class="p">[</span><span class="n">fb</span><span class="p">[</span><span class="s1">&#39;분류&#39;</span><span class="p">]]</span><span class="si">}</span><span class="s2"> [</span><span class="si">{</span><span class="n">fb</span><span class="p">[</span><span class="s1">&#39;분류&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">] </span><span class="si">{</span><span class="n">fb</span><span class="p">[</span><span class="s1">&#39;내용&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>실행 결과</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>1. 🟢 [수용] 5페이지 데이터 출처 누락
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>2. 🔴 [반려] 타겟을 중학생으로 변경 제안
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>3. 🟡 [보류] AI 모델 비용 추정 필요
+</span></code></pre></div></p>
+<hr />
+<h3 id="step-4">Step 4: 수용 항목 반영하여 기획서 수정하기<a class="headerlink" href="#step-4" title="Permanent link">&para;</a></h3>
+<p>분류 결과 중 🟢 수용 항목을 우선 반영합니다. 수정 전후를 기록해두면 나중에 개선 과정을 설명할 수 있습니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Before-After 기록 예시</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">revisions</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="s2">&quot;5페이지 기대효과&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>        <span class="s2">&quot;before&quot;</span><span class="p">:</span> <span class="s2">&quot;학생 70%가 어려움을 느낀다.&quot;</span><span class="p">,</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;after&quot;</span><span class="p">:</span> <span class="s2">&quot;학생 70%가 어려움을 느낀다. (출처: 2024 교육부 실태조사, 응답자 1,200명)&quot;</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">}</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="p">}</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="k">for</span> <span class="n">page</span><span class="p">,</span> <span class="n">change</span> <span class="ow">in</span> <span class="n">revisions</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;📄 </span><span class="si">{</span><span class="n">page</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  ❌ 수정 전: </span><span class="si">{</span><span class="n">change</span><span class="p">[</span><span class="s1">&#39;before&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  ✅ 수정 후: </span><span class="si">{</span><span class="n">change</span><span class="p">[</span><span class="s1">&#39;after&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>    <span class="nb">print</span><span class="p">()</span>
+</span></code></pre></div>
+<p><strong>실행 결과</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>📄 5페이지 기대효과
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  ❌ 수정 전: 학생 70%가 어려움을 느낀다.
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  ✅ 수정 후: 학생 70%가 어려움을 느낀다. (출처: 2024 교육부 실태조사, 응답자 1,200명)
+</span></code></pre></div></p>
+<hr />
+<h3 id="step-5">Step 5: 최종 체크리스트로 마무리하기<a class="headerlink" href="#step-5" title="Permanent link">&para;</a></h3>
+<p>제출 전 반드시 확인해야 할 항목들입니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># 최종 체크리스트 점검 도구</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">checklist</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="s2">&quot;오탈자 검수 완료&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="s2">&quot;모든 데이터에 출처 표기&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="s2">&quot;슬라이드 번호 삽입&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>  <span class="c1"># 아직 안 했다면!</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="s2">&quot;파일명 규칙 준수 (팀명_기획서_v최종)&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    <span class="s2">&quot;PDF 변환 확인&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="p">}</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;📋 최종 체크리스트&quot;</span><span class="p">)</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">40</span><span class="p">)</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="n">all_done</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="k">for</span> <span class="n">item</span><span class="p">,</span> <span class="n">done</span> <span class="ow">in</span> <span class="n">checklist</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>    <span class="n">mark</span> <span class="o">=</span> <span class="s2">&quot;✅&quot;</span> <span class="k">if</span> <span class="n">done</span> <span class="k">else</span> <span class="s2">&quot;⬜&quot;</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">done</span><span class="p">:</span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>        <span class="n">all_done</span> <span class="o">=</span> <span class="kc">False</span>
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">mark</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="nb">print</span><span class="p">()</span>
+</span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="k">if</span> <span class="n">all_done</span><span class="p">:</span>
+</span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🎉 제출 준비 완료!&quot;</span><span class="p">)</span>
+</span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;⚠️ 미완료 항목이 있습니다. 확인 후 제출하세요!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>실행 결과</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>📋 최종 체크리스트
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>========================================
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>  ✅ 오탈자 검수 완료
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>  ✅ 모든 데이터에 출처 표기
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>  ⬜ 슬라이드 번호 삽입
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>  ✅ 파일명 규칙 준수 (팀명_기획서_v최종)
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>  ⬜ PDF 변환 확인
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>⚠️ 미완료 항목이 있습니다. 확인 후 제출하세요!
+</span></code></pre></div></p>
+<hr />
+<h2 id="_4">📝 전체 흐름 정리<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<div class="mermaid">flowchart LR
+    A["1️⃣ 루브릭 확인"] --&gt; B["2️⃣ 피드백 작성"]
+    B --&gt; C["3️⃣ 분류\n수용·보류·반려"]
+    C --&gt; D["4️⃣ 수용 항목\n기획서 반영"]
+    D --&gt; E["5️⃣ 최종 체크리스트\n점검 &amp; 제출"]</div>
+<hr />
+<h2 id="_5">⚠️ 주의할 점<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p><strong>1. 피드백은 '사람'이 아니라 '기획서'에 하는 것입니다</strong></p>
+<blockquote>
+<p>"너희 팀은 준비를 안 한 것 같아"가 아니라, "3페이지 문제 정의 부분에 구체적인 사례가 추가되면 더 설득력이 있을 것 같습니다"처럼 <strong>문서의 특정 부분</strong>에 대해 이야기하세요.</p>
+</blockquote>
+<p><strong>2. 반려할 때 반드시 이유를 남기세요</strong></p>
+<blockquote>
+<p>이유 없이 무시하면 같은 피드백을 발표 심사에서 다시 받을 수 있습니다. "우리가 이 부분을 왜 이렇게 결정했는지" 기록해두면, 발표 때 질의응답에서도 자신 있게 답할 수 있습니다.</p>
+</blockquote>
+<hr />
+<h2 id="_6">✅ 점검하기<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p><strong>기본 문제</strong>: 다음 중 구조적 피드백의 3요소를 모두 갖춘 문장은?</p>
+<ul>
+<li>(가) "전체적으로 괜찮은 것 같아요."</li>
+<li>(나) "4페이지 그래프 색상이 두 개 겹쳐서 구분이 어려워요. 색상을 파랑/주황으로 바꾸면 좋겠습니다."</li>
+<li>(다) "데이터가 부족해요."</li>
+</ul>
+<details><summary>정답 확인</summary>
+
+**(나)**가 정답입니다.
+- **위치**: 4페이지 그래프
+- **근거**: 색상이 겹쳐서 구분이 어렵다
+- **제안**: 파랑/주황으로 변경
+
+(가)는 위치·근거·제안이 모두 없고, (다)는 위치와 제안이 없습니다.
+
+</details>
+
+<hr />
+<p><strong>응용 문제</strong>: 피드백 <em>"AI 대신 단순 규칙 기반으로도 충분할 것 같은데, AI를 꼭 써야 하는 이유가 기획서에 안 보여요"</em>를 받았습니다. 이 피드백을 <strong>수용</strong>한다면 기획서 어느 부분을 어떻게 수정해야 할까요?</p>
+<details><summary>정답 확인</summary>
+
+**'AI 적합성' 또는 'AI 솔루션 소개' 섹션**에 "규칙 기반 방식과 AI 방식의 차이점"을 비교하는 내용을 추가합니다.
+
+예시: *"단순 규칙 기반은 ○○ 상황에서 정확도가 60%에 그치지만, AI 모델은 패턴 학습을 통해 85%까지 높일 수 있다"*와 같이 AI가 더 나은 근거를 데이터로 보여주면 됩니다.
+
+</details>
+
+<hr />
+<p><strong>심화 문제 (도전!)</strong>: 피드백 반영 전후의 슬라이드를 Before-After로 캡처한다고 가정합니다. <strong>왜 Before-After 기록이 중요한지</strong> 두 가지 이유를 적어보세요.</p>
+<details><summary>정답 확인</summary>
+
+1. **성장 과정 증명**: 심사위원에게 "피드백을 수용하고 개선할 수 있는 팀"이라는 인상을 줄 수 있습니다.
+2. **의사결정 근거 보존**: 나중에 "왜 이렇게 바꿨지?"라는 질문에 명확히 답할 수 있고, 되돌려야 할 때 이전 버전을 참고할 수 있습니다.
+
+</details>
+
+<hr />
+<blockquote>
+<p>📌 <strong>정리하기</strong>: 이 장의 핵심
+- 좋은 피드백은 <strong>위치 + 근거 + 제안</strong> 세 가지를 모두 갖춘다
+- 받은 피드백은 <strong>수용 🟢 · 보류 🟡 · 반려 🔴</strong>로 분류하고 이유를 기록한다
+- 제출 전 <strong>최종 체크리스트</strong>(오탈자, 출처, 슬라이드 번호, 파일명, PDF 변환)를 반드시 점검한다</p>
+</blockquote>
+<hr />
+<h2 id="_7">🔗 다음 장 미리보기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>12차시: 발표와 회고 — 우리의 기획을 세상에 내놓다</strong></p>
+<p>드디어 마지막 차시입니다! 완성된 기획서를 바탕으로 <strong>발표를 실행</strong>하고, 심사위원(또는 동료)의 질의응답에 대응하는 방법을 배웁니다. 발표가 끝난 뒤에는 <strong>프로젝트 전체를 회고</strong>하며, 이 과정에서 무엇을 배웠고 다음에 무엇을 더 잘할 수 있을지 정리합니다. 🎤✨</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../javascripts/title-link.js"></script>
+      
+    
+  </body>
+</html>

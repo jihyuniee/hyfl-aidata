@@ -1,0 +1,1772 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="교육 공공데이터와 생성형 AI를 활용하여 실생활 문제를 발견하고, 팀 기반 아이디어 기획서를 완성하는 12차시 프로젝트 중심 교육자료입니다. 제8회 교육 공공데이터 AI 활용대회 참가를 목표로, 데이터 탐색부터 AI 솔루션 설계, 기획서 발표까지 전 과정을 단계별로 안내합니다.">
+      
+      
+        <meta name="author" content="Created with EduFlow">
+      
+      
+      
+        <link rel="prev" href="../chapter02/">
+      
+      
+        <link rel="next" href="../chapter04/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+    
+    
+      
+        <title>우리 팀의 문제를 정의하라 - 우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans KR";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-3" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복" class="md-header__button md-logo" aria-label="우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              우리 팀의 문제를 정의하라
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../chapter01/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 1 - [1권] Part 1. 출발 — 데이터로 세상 보기
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter04/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 2 - [1권] Part 2. 탐색 — 데이터를 찾고 읽고 연결하기
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter07/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 3 - [2권] Part 3. 설계 — 아이디어를 서비스로 만들기
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter10/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 4 - [2권] Part 4. 완성 — 기획서를 쓰고, 발표하고, 제출하다
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복" class="md-nav__button md-logo" aria-label="우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 1 - [1권] Part 1. 출발 — 데이터로 세상 보기
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 1 - [1권] Part 1. 출발 — 데이터로 세상 보기
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    공공데이터, 이미 우리 곁에 있다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    데이터는 흐른다 — 수집에서 AI까지
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    우리 팀의 문제를 정의하라
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    우리 팀의 문제를 정의하라
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 이 장에서 배우는 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 핵심 개념
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 핵심 개념">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 1: 좋은 문제 정의의 3가지 조건
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-hmwhow-might-we" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 2: HMW(How Might We) 기법
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔨 따라하기: Claude에게 문제 정의문 피드백 받기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기: Claude에게 문제 정의문 피드백 받기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-hmw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: 불만을 HMW 문장으로 전환하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: 3가지 조건 체크리스트로 평가하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Claude에게 피드백 받는 프롬프트 작성하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 팀 투표로 최종 문제 선정하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 전체 코드
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 주의할 점
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 점검하기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 다음 장 미리보기
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 2 - [1권] Part 2. 탐색 — 데이터를 찾고 읽고 연결하기
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 2 - [1권] Part 2. 탐색 — 데이터를 찾고 읽고 연결하기
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    교육 공공데이터, 어디에 뭐가 있을까
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    데이터가 말해주는 이야기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI는 여기서 어떻게 쓸 수 있을까
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 3 - [2권] Part 3. 설계 — 아이디어를 서비스로 만들기
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 3 - [2권] Part 3. 설계 — 아이디어를 서비스로 만들기
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    누가, 언제, 어떻게 쓸까 — 서비스 시나리오 설계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    생성형 AI, 기획의 날개를 달다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    데이터를 눈에 보이게 — 시각화의 힘
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 4 - [2권] Part 4. 완성 — 기획서를 쓰고, 발표하고, 제출하다
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 4 - [2권] Part 4. 완성 — 기획서를 쓰고, 발표하고, 제출하다
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PPT 15매, 구조가 답이다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    피드백으로 갈고닦기 — 기획서 최종 완성
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    무대 위의 3분 — 발표와 대회 제출
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 이 장에서 배우는 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 핵심 개념
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 핵심 개념">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 1: 좋은 문제 정의의 3가지 조건
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-hmwhow-might-we" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 2: HMW(How Might We) 기법
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔨 따라하기: Claude에게 문제 정의문 피드백 받기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기: Claude에게 문제 정의문 피드백 받기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-hmw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: 불만을 HMW 문장으로 전환하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: 3가지 조건 체크리스트로 평가하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Claude에게 피드백 받는 프롬프트 작성하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 팀 투표로 최종 문제 선정하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 전체 코드
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 주의할 점
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 점검하기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 다음 장 미리보기
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="chapter-3">Chapter 3. 우리 팀의 문제를 정의하라<a class="headerlink" href="#chapter-3" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>🕐 <strong>예상 소요 시간</strong>: 50분</p>
+</blockquote>
+<hr />
+<h2 id="_1">🎯 이 장에서 배우는 것<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 좋은 문제 정의의 3가지 조건(구체성, 측정 가능성, 데이터 연결성)을 설명할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> HMW(How Might We) 기법을 사용하여 불만을 기회 질문으로 전환할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 팀 합의를 거쳐 최종 문제 정의문 1개를 확정할 수 있다</li>
+</ul>
+<hr />
+<h2 id="_2">📚 핵심 개념<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="1-3">개념 1: 좋은 문제 정의의 3가지 조건<a class="headerlink" href="#1-3" title="Permanent link">&para;</a></h3>
+<p><strong>1. 비유로 시작</strong></p>
+<blockquote>
+<p>"문제 정의는 마치 <strong>내비게이션에 목적지를 입력하는 것</strong>과 같아요."
+'어딘가 좋은 곳'이라고 입력하면 내비게이션이 작동하지 않죠? '서울시 종로구 세종대로 1'처럼 정확하게 입력해야 경로가 나옵니다. 데이터 프로젝트도 마찬가지예요.</p>
+</blockquote>
+<p><strong>2. 정확한 정의</strong></p>
+<p>좋은 문제 정의란, 데이터로 답을 찾을 수 있도록 <strong>구체적이고 측정 가능하며 데이터와 연결된</strong> 질문을 만드는 것입니다.</p>
+<p>세 가지 조건을 기억하세요.</p>
+<ul>
+<li><strong>🔍 구체성</strong>: 누가, 언제, 어디서, 무엇이 문제인지 특정할 수 있는가?</li>
+<li><strong>📏 측정 가능성</strong>: 숫자나 비율로 표현할 수 있는가? 성공/실패를 판단할 기준이 있는가?</li>
+<li><strong>💾 데이터 연결성</strong>: 이 문제를 풀기 위해 수집하거나 찾을 수 있는 데이터가 존재하는가?</li>
+</ul>
+<p><strong>3. 예시로 확인</strong></p>
+<div class="mermaid">graph LR
+    A["😤 급식이 맛없다"] --&gt;|변환| B["📊 우리 학교 학생의&lt;br/&gt;메뉴별 선호도 데이터를 분석해&lt;br/&gt;잔반율을 15% 줄일 수 있을까?"]
+
+    style A fill:#ffcccc,stroke:#cc0000
+    style B fill:#ccffcc,stroke:#009900</div>
+<blockquote>
+<p>💡 <strong>알아보기</strong>: 왼쪽은 감정적 <strong>불만</strong>이고, 오른쪽은 데이터로 검증 가능한 <strong>문제 정의</strong>입니다. 차이가 느껴지나요?</p>
+</blockquote>
+<p>나쁜 문제 정의와 좋은 문제 정의를 더 비교해 봅시다.</p>
+<ul>
+<li>❌ "교실이 시끄럽다" → 😐 막연한 불만</li>
+<li>
+<p>✅ "쉬는 시간 직후 5분간 교실 소음 데시벨이 수업 집중에 영향을 주는가?" → 🎯 구체적 + 측정 가능 + 데이터 연결</p>
+</li>
+<li>
+<p>❌ "운동을 안 해서 건강이 안 좋다" → 😐 범위가 너무 넓음</p>
+</li>
+<li>✅ "우리 반 학생의 주간 운동 시간과 체력장 성적 사이에 상관관계가 있을까?" → 🎯 대상·범위·데이터가 명확</li>
+</ul>
+<hr />
+<h3 id="2-hmwhow-might-we">개념 2: HMW(How Might We) 기법<a class="headerlink" href="#2-hmwhow-might-we" title="Permanent link">&para;</a></h3>
+<p><strong>1. 비유로 시작</strong></p>
+<blockquote>
+<p>"HMW는 마치 <strong>불만을 기회의 씨앗으로 바꾸는 마법 문장</strong>과 같아요."
+친구가 '비가 와서 짜증나'라고 말하면, 당신이 '우리 어떻게 하면 비 오는 날도 재미있게 보낼 수 있을까?'로 바꿔주는 거예요.</p>
+</blockquote>
+<p><strong>2. 정확한 정의</strong></p>
+<p><strong>HMW(How Might We)</strong> 기법은 디자인 씽킹에서 나온 방법으로, 문제를 <strong>"우리가 어떻게 하면 ~할 수 있을까?"</strong> 형태로 바꾸는 기법입니다.</p>
+<p>HMW 문장의 구조는 다음과 같습니다.</p>
+<blockquote>
+<p><strong>"우리가 어떻게 하면"</strong> + [대상]의 + [구체적 상황]에서 + [원하는 변화]를 + <strong>"이끌어낼 수 있을까?"</strong></p>
+</blockquote>
+<p><strong>3. 예시로 확인</strong></p>
+<div class="mermaid">graph TD
+    P["🔴 관찰된 문제&lt;br/&gt;'등교 시간에 학교 앞 도로가 너무 막힌다'"]
+
+    P --&gt; H1["🟡 HMW 학생 관점&lt;br/&gt;우리가 어떻게 하면&lt;br/&gt;학생들의 등교 시간 분산으로&lt;br/&gt;혼잡도를 줄일 수 있을까?"]
+    P --&gt; H2["🟢 HMW 교사 관점&lt;br/&gt;우리가 어떻게 하면&lt;br/&gt;시차 등교 데이터를 활용해&lt;br/&gt;최적 등교 시간표를 만들 수 있을까?"]
+    P --&gt; H3["🔵 HMW 학부모 관점&lt;br/&gt;우리가 어떻게 하면&lt;br/&gt;차량 이동 경로 데이터로&lt;br/&gt;안전한 등교 동선을 설계할 수 있을까?"]
+
+    style P fill:#ffe0e0,stroke:#cc0000
+    style H1 fill:#fff8dc,stroke:#daa520
+    style H2 fill:#e0ffe0,stroke:#228b22
+    style H3 fill:#e0e8ff,stroke:#4169e1</div>
+<blockquote>
+<p>💡 <strong>생각해보기</strong>: 같은 문제라도 관점이 달라지면 수집해야 할 데이터가 완전히 달라집니다. 학생 관점은 <strong>등교 시각 데이터</strong>, 교사 관점은 <strong>시간대별 교통량 데이터</strong>, 학부모 관점은 <strong>차량 경로 데이터</strong>가 필요하겠죠?</p>
+</blockquote>
+<hr />
+<h2 id="claude">🔨 따라하기: Claude에게 문제 정의문 피드백 받기<a class="headerlink" href="#claude" title="Permanent link">&para;</a></h2>
+<p>2차시에서 발견한 문제 후보를 가지고, AI의 도움을 받아 다듬어 봅시다.</p>
+<h3 id="step-1-hmw">Step 1: 불만을 HMW 문장으로 전환하기<a class="headerlink" href="#step-1-hmw" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># 불만 → HMW 문장 전환 연습</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">complaints</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="s2">&quot;급식이 맛없다&quot;</span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="s2">&quot;체육 시간이 너무 짧다&quot;</span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="s2">&quot;도서관에 읽고 싶은 책이 없다&quot;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">hmw_template</span> <span class="o">=</span> <span class="s2">&quot;우리가 어떻게 하면 </span><span class="si">{target}</span><span class="s2">의 </span><span class="si">{situation}</span><span class="s2">에서 </span><span class="si">{change}</span><span class="s2">를 이끌어낼 수 있을까?&quot;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># 첫 번째 불만을 HMW로 전환한 예시</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="n">example</span> <span class="o">=</span> <span class="n">hmw_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">target</span><span class="o">=</span><span class="s2">&quot;우리 학교 학생&quot;</span><span class="p">,</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="n">situation</span><span class="o">=</span><span class="s2">&quot;급식 메뉴 선정 과정&quot;</span><span class="p">,</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="n">change</span><span class="o">=</span><span class="s2">&quot;학생 선호도를 반영한 잔반율 감소&quot;</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">)</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;❌ 불만:&quot;</span><span class="p">,</span> <span class="n">complaints</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ HMW:&quot;</span><span class="p">,</span> <span class="n">example</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>실행 결과</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>❌ 불만: 급식이 맛없다
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>✅ HMW: 우리가 어떻게 하면 우리 학교 학생의 급식 메뉴 선정 과정에서 학생 선호도를 반영한 잔반율 감소를 이끌어낼 수 있을까?
+</span></code></pre></div></p>
+<h3 id="step-2-3">Step 2: 3가지 조건 체크리스트로 평가하기<a class="headerlink" href="#step-2-3" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">check_problem_definition</span><span class="p">(</span><span class="n">problem_statement</span><span class="p">):</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;문제 정의문을 3가지 조건으로 평가합니다.&quot;&quot;&quot;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;📋 평가 대상: </span><span class="si">{</span><span class="n">problem_statement</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="n">checks</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>        <span class="s2">&quot;🔍 구체성&quot;</span><span class="p">:</span> <span class="s2">&quot;누가/언제/어디서/무엇이 특정되어 있는가?&quot;</span><span class="p">,</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>        <span class="s2">&quot;📏 측정 가능성&quot;</span><span class="p">:</span> <span class="s2">&quot;숫자나 비율로 성공을 판단할 수 있는가?&quot;</span><span class="p">,</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>        <span class="s2">&quot;💾 데이터 연결성&quot;</span><span class="p">:</span> <span class="s2">&quot;수집 가능한 데이터가 존재하는가?&quot;</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="p">}</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="k">for</span> <span class="n">criterion</span><span class="p">,</span> <span class="n">question</span> <span class="ow">in</span> <span class="n">checks</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>        <span class="n">answer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">criterion</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">question</span><span class="si">}</span><span class="s2"> (y/n): &quot;</span><span class="p">)</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>        <span class="k">if</span> <span class="n">answer</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>            <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;    ✅ 통과!&quot;</span><span class="p">)</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;    ⚠️ 보완 필요!&quot;</span><span class="p">)</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">총점: </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="s2">/3&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>    <span class="k">if</span> <span class="n">score</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;→ 🎉 훌륭한 문제 정의입니다!&quot;</span><span class="p">)</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>    <span class="k">elif</span> <span class="n">score</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;→ 👍 거의 다 왔어요. 한 가지만 보완하세요.&quot;</span><span class="p">)</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;→ 🔄 문제를 더 구체적으로 다듬어 봅시다.&quot;</span><span class="p">)</span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="c1"># 실행 예시</span>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="n">check_problem_definition</span><span class="p">(</span>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>    <span class="s2">&quot;학생 선호 메뉴 데이터를 분석해 잔반율을 15% 줄일 수 있을까?&quot;</span>
+</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>실행 결과</strong> (모두 y 입력 시):
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>📋 평가 대상: 학생 선호 메뉴 데이터를 분석해 잔반율을 15% 줄일 수 있을까?
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  🔍 구체성 - 누가/언제/어디서/무엇이 특정되어 있는가? (y/n): y
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    ✅ 통과!
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>  📏 측정 가능성 - 숫자나 비율로 성공을 판단할 수 있는가? (y/n): y
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    ✅ 통과!
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>  💾 데이터 연결성 - 수집 가능한 데이터가 존재하는가? (y/n): y
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    ✅ 통과!
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>총점: 3/3 → 🎉 훌륭한 문제 정의입니다!
+</span></code></pre></div></p>
+<h3 id="step-3-claude">Step 3: Claude에게 피드백 받는 프롬프트 작성하기<a class="headerlink" href="#step-3-claude" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Claude에게 보낼 프롬프트 생성기</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">create_feedback_prompt</span><span class="p">(</span><span class="n">hmw_statement</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;문제 정의문에 대한 AI 피드백 요청 프롬프트를 생성합니다.&quot;&quot;&quot;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="n">prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;당신은 데이터 프로젝트 멘토입니다.</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="s2">아래는 중고등학생 팀이 작성한 문제 정의문입니다.</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="s2">[문제 정의문]</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="si">{</span><span class="n">hmw_statement</span><span class="si">}</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="s2">[배경]</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="si">{</span><span class="n">context</span><span class="si">}</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="s2">다음 3가지 기준으로 피드백해주세요:</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="s2">1. 구체성: 대상과 범위가 명확한가?</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="s2">2. 측정 가능성: 성공 기준이 숫자로 표현 가능한가?</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="s2">3. 데이터 연결성: 어떤 데이터를 수집해야 하는가?</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="s2">각 기준별로 점수(1~5)와 개선 제안을 주세요.&quot;&quot;&quot;</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>    <span class="k">return</span> <span class="n">prompt</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="c1"># 사용 예시</span>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="n">my_prompt</span> <span class="o">=</span> <span class="n">create_feedback_prompt</span><span class="p">(</span>
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>    <span class="n">hmw_statement</span><span class="o">=</span><span class="s2">&quot;우리가 어떻게 하면 학생 선호도 데이터로 잔반율을 줄일 수 있을까?&quot;</span><span class="p">,</span>
+</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a>    <span class="n">context</span><span class="o">=</span><span class="s2">&quot;우리 학교 급식 잔반이 많아서 음식물 쓰레기가 문제입니다.&quot;</span>
+</span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="p">)</span>
+</span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a>
+</span><span id="__span-4-29"><a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== Claude에게 보낼 프롬프트 ===&quot;</span><span class="p">)</span>
+</span><span id="__span-4-30"><a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_prompt</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>실행 결과</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>=== Claude에게 보낼 프롬프트 ===
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>당신은 데이터 프로젝트 멘토입니다.
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>아래는 중고등학생 팀이 작성한 문제 정의문입니다.
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>[문제 정의문]
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>우리가 어떻게 하면 학생 선호도 데이터로 잔반율을 줄일 수 있을까?
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>[배경]
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>우리 학교 급식 잔반이 많아서 음식물 쓰레기가 문제입니다.
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>다음 3가지 기준으로 피드백해주세요:
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>1. 구체성: 대상과 범위가 명확한가?
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>2. 측정 가능성: 성공 기준이 숫자로 표현 가능한가?
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>3. 데이터 연결성: 어떤 데이터를 수집해야 하는가?
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>각 기준별로 점수(1~5)와 개선 제안을 주세요.
+</span></code></pre></div></p>
+<blockquote>
+<p>💡 이 프롬프트를 실제로 Claude에게 보내보세요. AI의 피드백을 참고해 문제 정의문을 다듬을 수 있습니다.</p>
+</blockquote>
+<h3 id="step-4">Step 4: 팀 투표로 최종 문제 선정하기<a class="headerlink" href="#step-4" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">team_vote</span><span class="p">(</span><span class="n">problems</span><span class="p">):</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;팀원들의 투표로 최종 문제를 선정합니다.&quot;&quot;&quot;</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🗳️ 팀 문제 정의 투표</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">prob</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">problems</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">번: </span><span class="si">{</span><span class="n">prob</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    <span class="nb">print</span><span class="p">()</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    <span class="n">votes</span> <span class="o">=</span> <span class="p">{}</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>    <span class="k">for</span> <span class="n">prob</span> <span class="ow">in</span> <span class="n">problems</span><span class="p">:</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>        <span class="n">votes</span><span class="p">[</span><span class="n">prob</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>    <span class="n">num_members</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;팀원 수를 입력하세요: &quot;</span><span class="p">))</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>    <span class="k">for</span> <span class="n">member</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_members</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>        <span class="n">choice</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  팀원</span><span class="si">{</span><span class="n">member</span><span class="si">}</span><span class="s2">의 선택 (번호): &quot;</span><span class="p">))</span>
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>        <span class="n">votes</span><span class="p">[</span><span class="n">problems</span><span class="p">[</span><span class="n">choice</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]]</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>    <span class="n">winner</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">votes</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">votes</span><span class="o">.</span><span class="n">get</span><span class="p">)</span>
+</span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">🏆 최종 선정: </span><span class="si">{</span><span class="n">winner</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   (득표수: </span><span class="si">{</span><span class="n">votes</span><span class="p">[</span><span class="n">winner</span><span class="p">]</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">num_members</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+</span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a>    <span class="k">return</span> <span class="n">winner</span>
+</span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a>
+</span><span id="__span-6-24"><a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a><span class="c1"># 실행 예시 (후보 3개)</span>
+</span><span id="__span-6-25"><a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a><span class="n">candidates</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-6-26"><a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a>    <span class="s2">&quot;학생 메뉴 선호도 분석으로 잔반율을 줄일 수 있을까?&quot;</span><span class="p">,</span>
+</span><span id="__span-6-27"><a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a>    <span class="s2">&quot;요일별 잔반량 패턴을 분석해 메뉴 배치를 최적화할 수 있을까?&quot;</span><span class="p">,</span>
+</span><span id="__span-6-28"><a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a>    <span class="s2">&quot;잔반 줄이기 캠페인 전후 데이터를 비교해 효과를 측정할 수 있을까?&quot;</span>
+</span><span id="__span-6-29"><a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a><span class="p">]</span>
+</span><span id="__span-6-30"><a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a>
+</span><span id="__span-6-31"><a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a><span class="c1"># team_vote(candidates)  # 실제 수업에서 실행!</span>
+</span></code></pre></div>
+<hr />
+<h2 id="_3">📝 전체 코드<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># === Chapter 3: 문제 정의 도구 모음 ===</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="c1"># 1. HMW 문장 생성기</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">make_hmw</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">situation</span><span class="p">,</span> <span class="n">change</span><span class="p">):</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;우리가 어떻게 하면 </span><span class="si">{</span><span class="n">target</span><span class="si">}</span><span class="s2">의 </span><span class="si">{</span><span class="n">situation</span><span class="si">}</span><span class="s2">에서 </span><span class="si">{</span><span class="n">change</span><span class="si">}</span><span class="s2">를 이끌어낼 수 있을까?&quot;</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c1"># 2. 문제 정의 체크리스트</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="k">def</span><span class="w"> </span><span class="nf">check_problem</span><span class="p">(</span><span class="n">statement</span><span class="p">):</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;📋 평가: </span><span class="si">{</span><span class="n">statement</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="n">criteria</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;🔍 구체성&quot;</span><span class="p">,</span> <span class="s2">&quot;📏 측정 가능성&quot;</span><span class="p">,</span> <span class="s2">&quot;💾 데이터 연결성&quot;</span><span class="p">]</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>    <span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">criteria</span><span class="p">:</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>        <span class="n">ans</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s2"> 충족? (y/n): &quot;</span><span class="p">)</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>        <span class="k">if</span> <span class="n">ans</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>            <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">결과: </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="s2">/3 </span><span class="si">{</span><span class="s1">&#39;✅ 통과&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;🔄 보완 필요&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>
+</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="c1"># 3. AI 피드백 프롬프트 생성</span>
+</span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="k">def</span><span class="w"> </span><span class="nf">make_prompt</span><span class="p">(</span><span class="n">hmw</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+</span><span id="__span-7-20"><a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;데이터 프로젝트 멘토로서 아래 문제 정의문을 평가해주세요.</span>
+</span><span id="__span-7-21"><a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="s2">[문제 정의문] </span><span class="si">{</span><span class="n">hmw</span><span class="si">}</span>
+</span><span id="__span-7-22"><a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="s2">[배경] </span><span class="si">{</span><span class="n">context</span><span class="si">}</span>
+</span><span id="__span-7-23"><a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="s2">구체성/측정 가능성/데이터 연결성 기준으로 피드백 부탁합니다.&quot;&quot;&quot;</span>
+</span><span id="__span-7-24"><a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>
+</span><span id="__span-7-25"><a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="c1"># === 사용 예시 ===</span>
+</span><span id="__span-7-26"><a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="n">hmw</span> <span class="o">=</span> <span class="n">make_hmw</span><span class="p">(</span><span class="s2">&quot;우리 학교 학생&quot;</span><span class="p">,</span> <span class="s2">&quot;급식 메뉴 선정&quot;</span><span class="p">,</span> <span class="s2">&quot;잔반율 15% 감소&quot;</span><span class="p">)</span>
+</span><span id="__span-7-27"><a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="nb">print</span><span class="p">(</span><span class="n">hmw</span><span class="p">)</span>
+</span><span id="__span-7-28"><a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a><span class="n">check_problem</span><span class="p">(</span><span class="n">hmw</span><span class="p">)</span>
+</span><span id="__span-7-29"><a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a><span class="nb">print</span><span class="p">(</span><span class="n">make_prompt</span><span class="p">(</span><span class="n">hmw</span><span class="p">,</span> <span class="s2">&quot;급식 잔반이 많아 음식물 쓰레기 문제 발생&quot;</span><span class="p">))</span>
+</span></code></pre></div>
+<hr />
+<h2 id="_4">⚠️ 주의할 점<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p><strong>1. 문제 정의가 너무 크거나 너무 작지 않게 하세요</strong></p>
+<ul>
+<li>❌ 너무 큼: "한국 교육의 문제를 해결할 수 있을까?" → 데이터로 다룰 수 없는 범위</li>
+<li>❌ 너무 작음: "내 친구 민수가 급식을 안 먹는 이유" → 일반화할 수 없음</li>
+<li>✅ 적당함: "우리 학교 1학년의 메뉴별 잔반율 차이를 분석할 수 있을까?"</li>
+</ul>
+<p><strong>2. '느낌'이 아니라 '데이터'로 답할 수 있는 질문인지 확인하세요</strong></p>
+<p>"급식이 행복하게 느껴지려면?"은 데이터 프로젝트 문제가 아닙니다. "잔반율이 낮은 메뉴의 공통 특징은?"은 데이터로 답할 수 있는 좋은 문제입니다.</p>
+<hr />
+<h2 id="_5">✅ 점검하기<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>📌 <strong>정리하기</strong>: 이 장에서 배운 핵심을 확인해 봅시다.</p>
+</blockquote>
+<p><strong>기본 문제 1.</strong> 다음 중 좋은 문제 정의는 어느 것인가요?</p>
+<ul>
+<li>(가) 우리 학교 시설이 불편하다</li>
+<li>(나) 우리 학교 화장실 이용 시간대별 혼잡도를 분석하여 쉬는 시간 조정으로 대기 시간을 줄일 수 있을까?</li>
+</ul>
+<details><summary>정답 확인</summary>
+
+**(나)**가 좋은 문제 정의입니다.
+- 구체성 ✅: 화장실, 시간대별, 쉬는 시간이라는 구체적 범위
+- 측정 가능성 ✅: 혼잡도, 대기 시간이라는 측정 지표
+- 데이터 연결성 ✅: 시간대별 이용 인원 데이터 수집 가능
+
+(가)는 막연한 불만일 뿐, 데이터 프로젝트의 출발점이 될 수 없습니다.
+</details>
+
+<p><strong>응용 문제 2.</strong> "학교 앞 교통이 위험하다"를 HMW 문장으로 전환해 보세요.</p>
+<details><summary>정답 확인</summary>
+
+예시 답안: **"우리가 어떻게 하면 등하교 시간대 학교 앞 차량 통행량 데이터를 활용해 안전한 통학로를 제안할 수 있을까?"**
+
+핵심은 '위험하다'라는 감정을 '차량 통행량'이라는 측정 가능한 데이터로, '안전한 통학로 제안'이라는 구체적 목표로 바꾸는 것입니다.
+</details>
+
+<p><strong>심화 문제 3.</strong> 🏆 <strong>도전!</strong> "학교 도서관 이용이 저조하다"는 문제를 <strong>학생·교사·학부모</strong> 3가지 관점에서 각각 HMW 문장으로 작성해 보세요. 각 관점에서 필요한 데이터가 어떻게 달라지는지도 적어 보세요.</p>
+<details><summary>정답 확인</summary>
+
+- **학생 관점**: "우리가 어떻게 하면 학생들의 관심 분야별 희망 도서 데이터를 수집해 대출률을 높일 수 있을까?" → 필요 데이터: 학생 관심 분야 설문, 현재 대출 기록
+- **교사 관점**: "우리가 어떻게 하면 교과 연계 도서 추천 데이터를 분석해 수업과 독서를 연결할 수 있을까?" → 필요 데이터: 교과별 추천 도서 목록, 교과 진도표
+- **학부모 관점**: "우리가 어떻게 하면 자녀 독서 시간 데이터를 활용해 가정 독서 환경 개선 방안을 찾을 수 있을까?" → 필요 데이터: 가정 내 독서 시간 조사, 독서 환경 설문
+
+👉 같은 문제도 관점이 달라지면 수집할 데이터와 해결 방향이 완전히 달라집니다!
+</details>
+
+<hr />
+<h2 id="_6">🔗 다음 장 미리보기<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>문제가 정의되었으니, 이제 그 문제를 풀기 위한 <strong>데이터를 어디서, 어떻게 모을지</strong> 계획을 세울 차례입니다. 다음 장에서는 설문지 설계, 공공데이터 활용, 관찰 기록 등 다양한 데이터 수집 방법을 배우게 됩니다. 오늘 확정한 문제 정의문을 꼭 가져오세요! 📊</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../javascripts/title-link.js"></script>
+      
+    
+  </body>
+</html>

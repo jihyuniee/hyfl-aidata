@@ -1,0 +1,1800 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="교육 공공데이터와 생성형 AI를 활용하여 실생활 문제를 발견하고, 팀 기반 아이디어 기획서를 완성하는 12차시 프로젝트 중심 교육자료입니다. 제8회 교육 공공데이터 AI 활용대회 참가를 목표로, 데이터 탐색부터 AI 솔루션 설계, 기획서 발표까지 전 과정을 단계별로 안내합니다.">
+      
+      
+        <meta name="author" content="Created with EduFlow">
+      
+      
+      
+        <link rel="prev" href="../chapter04/">
+      
+      
+        <link rel="next" href="../chapter06/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+    
+    
+      
+        <title>데이터가 말해주는 이야기 - 우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans KR";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복" class="md-header__button md-logo" aria-label="우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              데이터가 말해주는 이야기
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter01/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 1 - [1권] Part 1. 출발 — 데이터로 세상 보기
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../chapter04/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 2 - [1권] Part 2. 탐색 — 데이터를 찾고 읽고 연결하기
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter07/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 3 - [2권] Part 3. 설계 — 아이디어를 서비스로 만들기
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter10/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 4 - [2권] Part 4. 완성 — 기획서를 쓰고, 발표하고, 제출하다
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복" class="md-nav__button md-logo" aria-label="우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 1 - [1권] Part 1. 출발 — 데이터로 세상 보기
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 1 - [1권] Part 1. 출발 — 데이터로 세상 보기
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    공공데이터, 이미 우리 곁에 있다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    데이터는 흐른다 — 수집에서 AI까지
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    우리 팀의 문제를 정의하라
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 2 - [1권] Part 2. 탐색 — 데이터를 찾고 읽고 연결하기
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 2 - [1권] Part 2. 탐색 — 데이터를 찾고 읽고 연결하기
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    교육 공공데이터, 어디에 뭐가 있을까
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    데이터가 말해주는 이야기
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    데이터가 말해주는 이야기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 이 장에서 배우는 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 핵심 개념
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 핵심 개념">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 1: 데이터 탐색 — 질문을 던져야 이야기가 시작된다
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 2: 인사이트 — 데이터가 들려주는 '의미 있는 발견'
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔨 따라하기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: 데이터를 구글 스프레드시트에 올리기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: 정렬로 순위 질문에 답하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 필터로 비교 질문에 답하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 피벗 테이블로 트렌드 질문에 답하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-chatgpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: ChatGPT에게 데이터 분석 요청하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 주의할 점
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 정리하기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 점검하기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ 점검하기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        기본 문제
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        응용 문제
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏆 도전 문제
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 다음 장 미리보기
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI는 여기서 어떻게 쓸 수 있을까
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 3 - [2권] Part 3. 설계 — 아이디어를 서비스로 만들기
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 3 - [2권] Part 3. 설계 — 아이디어를 서비스로 만들기
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    누가, 언제, 어떻게 쓸까 — 서비스 시나리오 설계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    생성형 AI, 기획의 날개를 달다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    데이터를 눈에 보이게 — 시각화의 힘
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 4 - [2권] Part 4. 완성 — 기획서를 쓰고, 발표하고, 제출하다
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 4 - [2권] Part 4. 완성 — 기획서를 쓰고, 발표하고, 제출하다
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PPT 15매, 구조가 답이다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    피드백으로 갈고닦기 — 기획서 최종 완성
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    무대 위의 3분 — 발표와 대회 제출
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 이 장에서 배우는 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 핵심 개념
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 핵심 개념">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 1: 데이터 탐색 — 질문을 던져야 이야기가 시작된다
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 2: 인사이트 — 데이터가 들려주는 '의미 있는 발견'
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔨 따라하기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: 데이터를 구글 스프레드시트에 올리기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: 정렬로 순위 질문에 답하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 필터로 비교 질문에 답하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 피벗 테이블로 트렌드 질문에 답하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-chatgpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: ChatGPT에게 데이터 분석 요청하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 주의할 점
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 정리하기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 점검하기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ 점검하기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        기본 문제
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        응용 문제
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏆 도전 문제
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 다음 장 미리보기
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">데이터가 말해주는 이야기<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>Part 2. 탐색 — 데이터를 찾고 읽고 연결하기 | 5차시</strong></p>
+</blockquote>
+<hr />
+<h2 id="_2">🎯 이 장에서 배우는 것<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 구글 스프레드시트에서 <strong>정렬, 필터, 피벗 테이블</strong>을 사용하여 데이터를 탐색할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 데이터에서 <strong>의미 있는 인사이트(패턴, 이상값, 트렌드)</strong>를 발견하고 문장으로 표현할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>ChatGPT에 데이터 분석을 요청하는 프롬프트</strong>를 작성하여 내 분석과 비교할 수 있다</li>
+</ul>
+<hr />
+<h2 id="_3">📚 핵심 개념<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1">개념 1: 데이터 탐색 — 질문을 던져야 이야기가 시작된다<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>비유로 시작</strong>: 데이터 탐색은 마치 <strong>탐정이 사건 현장을 조사하는 것</strong>과 같아요. 단서(숫자)는 여기저기 흩어져 있지만, "누가? 언제? 왜?"라는 질문을 던져야 비로소 사건의 윤곽이 드러납니다.</p>
+</li>
+<li>
+<p><strong>정확한 정의</strong>: 데이터 탐색(Exploratory Data Analysis)이란, 수집한 데이터에 질문을 던지고 <strong>정렬·필터·요약</strong> 등의 도구로 답을 찾아가는 과정입니다. 분석의 첫 단추이자 가장 중요한 단계입니다.</p>
+</li>
+<li>
+<p><strong>예시로 확인</strong>: "전국 시도별 1인당 쓰레기 배출량" 데이터가 있다고 합시다. 그냥 보면 숫자 나열이지만, <strong>"가장 많이 배출하는 지역은?"</strong>이라고 질문하는 순간, 정렬 한 번으로 답이 보입니다.</p>
+</li>
+</ol>
+<blockquote>
+<p>💡 <strong>알아보기</strong>: 좋은 탐색 질문의 3가지 유형
+- <strong>순위 질문</strong> — "가장 높은/낮은 값은 무엇인가?"
+- <strong>비교 질문</strong> — "그룹(지역, 연도, 성별 등)별 차이가 있는가?"
+- <strong>변화 질문</strong> — "시간에 따라 증가/감소하는 추세가 있는가?"</p>
+</blockquote>
+<hr />
+<h3 id="2">개념 2: 인사이트 — 데이터가 들려주는 '의미 있는 발견'<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>비유로 시작</strong>: 인사이트는 마치 <strong>퍼즐 조각을 맞춰서 완성된 그림의 한 장면을 보는 것</strong>과 같아요. 숫자 하나하나는 조각이지만, 연결하면 이야기가 됩니다.</p>
+</li>
+<li>
+<p><strong>정확한 정의</strong>: 인사이트(Insight)란, 데이터에서 발견한 <strong>패턴(pattern), 이상값(outlier), 트렌드(trend)</strong> 등을 해석하여 "그래서 이것이 무엇을 의미하는가"를 문장으로 표현한 것입니다.</p>
+</li>
+<li>
+<p><strong>예시로 확인</strong>:</p>
+</li>
+<li><strong>패턴</strong>: "인구가 많은 도시일수록 1인당 배출량은 오히려 낮은 경향이 있다"</li>
+<li><strong>이상값</strong>: "제주도만 유독 1인당 배출량이 전국 평균의 2배다"</li>
+<li><strong>트렌드</strong>: "2018년부터 2023년까지 재활용률이 매년 약 2%p씩 상승했다"</li>
+</ol>
+<div class="mermaid">flowchart LR
+    A["🔢 원시 데이터"] --&gt;|"질문을 던진다"| B["🔍 탐색&lt;br/&gt;(정렬·필터·피벗)"]
+    B --&gt;|"패턴을 발견한다"| C["💡 인사이트&lt;br/&gt;(의미 있는 문장)"]
+    C --&gt;|"이야기를 전달한다"| D["📊 데이터 스토리"]</div>
+<hr />
+<h2 id="_4">🔨 따라하기<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>📋 <strong>준비물</strong>: 4차시에서 다운로드한 CSV 파일 (또는 아래 예시 데이터), 구글 스프레드시트, ChatGPT</p>
+</blockquote>
+<p>이번 실습에서는 "시도별 연간 1인당 생활폐기물 배출량" 데이터를 사용합니다. 4차시에서 받은 데이터가 없다면, 구글 스프레드시트에 아래 데이터를 직접 입력하세요.</p>
+<blockquote>
+<p><strong>예시 데이터 (8개 시도 × 3개 연도)</strong>
+- <strong>열(컬럼)</strong>: 시도명, 연도, 1인당배출량(kg), 재활용률(%)
+- 서울 / 2021 / 0.92 / 62.1
+- 서울 / 2022 / 0.89 / 63.5
+- 서울 / 2023 / 0.87 / 65.0
+- 부산 / 2021 / 1.05 / 58.3
+- 부산 / 2022 / 1.02 / 59.1
+- 부산 / 2023 / 0.98 / 60.8
+- 대구 / 2021 / 1.10 / 55.7
+- 대구 / 2022 / 1.08 / 56.9
+- 대구 / 2023 / 1.04 / 58.2
+- 인천 / 2021 / 1.15 / 54.0
+- 인천 / 2022 / 1.12 / 55.3
+- 인천 / 2023 / 1.09 / 57.1
+- 광주 / 2021 / 0.98 / 60.2
+- 광주 / 2022 / 0.95 / 61.0
+- 광주 / 2023 / 0.93 / 62.5
+- 제주 / 2021 / 1.85 / 45.2
+- 제주 / 2022 / 1.90 / 44.8
+- 제주 / 2023 / 1.88 / 46.0
+- 세종 / 2021 / 1.20 / 52.0
+- 세종 / 2022 / 1.25 / 51.5
+- 세종 / 2023 / 1.22 / 53.0
+- 경기 / 2021 / 1.00 / 59.5
+- 경기 / 2022 / 0.97 / 60.8
+- 경기 / 2023 / 0.95 / 62.0</p>
+</blockquote>
+<hr />
+<h3 id="step-1">Step 1: 데이터를 구글 스프레드시트에 올리기<a class="headerlink" href="#step-1" title="Permanent link">&para;</a></h3>
+<ol>
+<li><a href="https://sheets.google.com">Google Sheets</a>에 접속하여 <strong>새 스프레드시트</strong>를 만듭니다.</li>
+<li>4차시 CSV 파일이 있다면: <strong>파일 → 가져오기 → 업로드</strong> 탭에서 파일을 올립니다.</li>
+<li>없다면: 위 예시 데이터를 A1셀부터 직접 입력합니다. (A열: 시도명, B열: 연도, C열: 1인당배출량, D열: 재활용률)</li>
+</ol>
+<blockquote>
+<p>🔍 <strong>생각해보기</strong>: 데이터를 올린 후, 행(row)은 몇 개이고 열(column)은 몇 개인지 확인해보세요. 이것만으로도 "이 데이터의 규모"라는 첫 번째 정보를 얻은 것입니다.</p>
+</blockquote>
+<hr />
+<h3 id="step-2">Step 2: 정렬로 순위 질문에 답하기<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
+<p><strong>"1인당 배출량이 가장 높은 지역은 어디일까?"</strong></p>
+<ol>
+<li>C열(1인당배출량) 헤더를 클릭합니다.</li>
+<li>메뉴에서 <strong>데이터 → 시트 정렬 → Z→A(내림차순)</strong>를 선택합니다.</li>
+<li>맨 위에 올라온 행을 확인합니다.</li>
+</ol>
+<p><strong>실행 결과 (예상)</strong>:</p>
+<blockquote>
+<p>제주 / 2022 / <strong>1.90</strong> / 44.8 이 가장 위에 옵니다.</p>
+</blockquote>
+<p>✏️ 여러분의 발견을 메모장이나 시트 옆에 적어보세요:</p>
+<blockquote>
+<p>📌 <strong>인사이트 #1</strong>: "제주도의 1인당 생활폐기물 배출량(1.90kg)은 서울(0.87kg)의 약 2.2배로, 전국에서 가장 높다."</p>
+</blockquote>
+<hr />
+<h3 id="step-3">Step 3: 필터로 비교 질문에 답하기<a class="headerlink" href="#step-3" title="Permanent link">&para;</a></h3>
+<p><strong>"2023년 데이터만 골라서 지역 간 차이를 보고 싶다면?"</strong></p>
+<ol>
+<li>첫 번째 행(헤더)을 선택한 후, <strong>데이터 → 필터 만들기</strong>를 클릭합니다.</li>
+<li>B열(연도) 헤더에 생긴 <strong>▼ 아이콘</strong>을 클릭합니다.</li>
+<li><strong>"모두 선택 해제"</strong> 후, <strong>2023</strong>만 체크하고 <strong>확인</strong>을 누릅니다.</li>
+<li>이제 2023년 데이터만 화면에 표시됩니다.</li>
+</ol>
+<p><strong>실행 결과 (예상)</strong>:</p>
+<blockquote>
+<p>2023년 기준 — 서울 0.87 / 부산 0.98 / 대구 1.04 / 인천 1.09 / 광주 0.93 / 제주 1.88 / 세종 1.22 / 경기 0.95</p>
+<p>📌 <strong>인사이트 #2</strong>: "2023년 기준, 서울(0.87kg)이 가장 적고 제주(1.88kg)가 가장 많아 약 2.16배 차이가 난다."</p>
+</blockquote>
+<hr />
+<h3 id="step-4">Step 4: 피벗 테이블로 트렌드 질문에 답하기<a class="headerlink" href="#step-4" title="Permanent link">&para;</a></h3>
+<p><strong>"연도별로 전체 평균 배출량이 줄고 있을까?"</strong></p>
+<ol>
+<li>필터를 해제합니다 (데이터 → 필터 해제).</li>
+<li>전체 데이터 범위를 선택한 후, <strong>삽입 → 피벗 테이블</strong>을 클릭합니다.</li>
+<li>"새 시트"를 선택하고 <strong>만들기</strong>를 누릅니다.</li>
+<li>피벗 테이블 편집기에서 설정합니다:</li>
+<li><strong>행</strong>: 연도</li>
+<li><strong>값</strong>: 1인당배출량 → <strong>요약 기준: AVERAGE(평균)</strong></li>
+<li>결과를 확인합니다.</li>
+</ol>
+<p><strong>실행 결과 (예상)</strong>:</p>
+<blockquote>
+<ul>
+<li>2021년 평균: <strong>1.16kg</strong></li>
+<li>2022년 평균: <strong>1.15kg</strong></li>
+<li>2023년 평균: <strong>1.12kg</strong></li>
+</ul>
+<p>📌 <strong>인사이트 #3</strong>: "2021~2023년 전국 평균 1인당 배출량이 1.16→1.12kg으로 매년 감소 추세를 보인다."</p>
+<p>💡 <strong>알아보기</strong>: 피벗 테이블이란?
+피벗(Pivot)은 "축을 중심으로 돌린다"는 뜻입니다. 원본 데이터를 <strong>원하는 기준(행)과 계산 방식(값)</strong>으로 재배치해서 요약해주는 강력한 도구입니다. 수백, 수천 행의 데이터도 한 번에 요약할 수 있어요.</p>
+</blockquote>
+<hr />
+<h3 id="step-5-chatgpt">Step 5: ChatGPT에게 데이터 분석 요청하기<a class="headerlink" href="#step-5-chatgpt" title="Permanent link">&para;</a></h3>
+<p>이제 여러분이 직접 발견한 인사이트를 <strong>ChatGPT의 분석과 비교</strong>해봅니다.</p>
+<p><strong>ChatGPT에 보낼 프롬프트:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>아래는 시도별 연간 1인당 생활폐기물 배출량(kg)과 재활용률(%) 데이터야.
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>서울, 2021, 0.92, 62.1
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>서울, 2022, 0.89, 63.5
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>서울, 2023, 0.87, 65.0
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>부산, 2021, 1.05, 58.3
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>부산, 2022, 1.02, 59.1
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>부산, 2023, 0.98, 60.8
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>(... 나머지 데이터도 모두 붙여넣기 ...)
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>이 데이터에서 흥미로운 패턴, 이상값, 트렌드를 3가지 이상 찾아서
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>각각 한 문장으로 설명해줘.
+</span></code></pre></div>
+<p><strong>ChatGPT 응답 예시:</strong></p>
+<blockquote>
+<ol>
+<li>제주도는 1인당 배출량이 다른 시도 대비 약 1.5~2배 높은 이상값입니다.</li>
+<li>모든 시도에서 2021→2023년 배출량이 감소하는 공통 트렌드가 관찰됩니다. (단, 세종은 2022년에 일시 증가)</li>
+<li>배출량이 낮을수록 재활용률이 높은 역의 상관관계가 보입니다.</li>
+</ol>
+<p>🔍 <strong>생각해보기</strong>: ChatGPT의 분석과 여러분의 분석을 비교해보세요.
+- 같은 점은 무엇인가요?
+- ChatGPT가 발견했지만 내가 놓친 것은?
+- 반대로, ChatGPT가 틀렸거나 과장한 부분은 없나요?</p>
+</blockquote>
+<p>이렇게 <strong>자신의 탐색 결과와 AI의 분석을 교차 확인</strong>하는 습관은 데이터 리터러시의 핵심입니다. AI를 맹신하지도, 무시하지도 않는 것이죠.</p>
+<hr />
+<h2 id="_5">⚠️ 주의할 점<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>인사이트 ≠ 숫자 읽기</strong>: "서울은 0.87이다"는 인사이트가 아닙니다. <strong>"서울은 전국에서 가장 낮으며, 이는 높은 재활용률과 관련이 있을 수 있다"</strong>처럼 <strong>비교·해석·맥락</strong>이 담겨야 인사이트입니다.</p>
+</li>
+<li>
+<p><strong>상관관계 ≠ 인과관계</strong>: "배출량이 낮은 지역이 재활용률이 높다"는 상관관계이지, "재활용을 많이 해서 배출량이 줄었다"는 인과관계는 이 데이터만으로 증명할 수 없습니다. ChatGPT도 종종 상관을 인과로 표현하니 주의하세요.</p>
+</li>
+</ol>
+<hr />
+<h2 id="_6">📝 정리하기<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<div class="mermaid">flowchart TD
+    A["1️⃣ 정렬&lt;br/&gt;순위를 파악한다"] --&gt; D["💡 인사이트 도출"]
+    B["2️⃣ 필터&lt;br/&gt;조건별로 비교한다"] --&gt; D
+    C["3️⃣ 피벗 테이블&lt;br/&gt;그룹별 요약을 본다"] --&gt; D
+    D --&gt; E["🤖 ChatGPT로&lt;br/&gt;교차 확인"]
+    E --&gt; F["📝 최종 분석 문장&lt;br/&gt;작성"]</div>
+<blockquote>
+<p><strong>정리하기</strong> 🗂️
+- <strong>정렬</strong>: "가장 높은/낮은 것은?" → 순위 파악
+- <strong>필터</strong>: "특정 조건만 보면?" → 그룹 비교
+- <strong>피벗 테이블</strong>: "기준별 평균/합계는?" → 요약과 트렌드
+- <strong>인사이트</strong>: 숫자가 아닌, 비교·해석·맥락이 담긴 문장
+- <strong>AI 교차 확인</strong>: 내 분석 + ChatGPT 분석 → 더 풍부한 발견</p>
+</blockquote>
+<hr />
+<h2 id="_7">✅ 점검하기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="_8">기본 문제<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p><strong>1. 다음 중 "인사이트"에 해당하는 문장은 무엇일까요?</strong>
+- (가) "서울의 2023년 배출량은 0.87kg이다."
+- (나) "제주는 유일하게 배출량이 1.5kg을 넘으며, 관광객 유입이 원인일 수 있다."</p>
+<details><summary>정답 확인</summary>
+
+**(나)**가 인사이트입니다. (가)는 단순한 데이터 읽기이고, (나)는 비교("유일하게 1.5kg 초과")와 맥락("관광객 유입")이 포함된 해석입니다.
+
+</details>
+
+<hr />
+<p><strong>2. 피벗 테이블에서 "행: 시도명, 값: 재활용률(평균)"으로 설정하면 어떤 정보를 얻을 수 있나요?</strong></p>
+<details><summary>정답 확인</summary>
+
+각 시도별로 3개 연도(2021~2023)의 **재활용률 평균**을 한눈에 비교할 수 있습니다. 예를 들어 서울의 3년 평균 재활용률은 (62.1+63.5+65.0)÷3 = 63.5% 입니다.
+
+</details>
+
+<hr />
+<h3 id="_9">응용 문제<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p><strong>3. 아래 프롬프트를 더 좋은 프롬프트로 개선해보세요.</strong></p>
+<p>원본: <em>"이 데이터 분석해줘"</em></p>
+<details><summary>정답 확인 (개선 예시)</summary>
+
+*"아래 시도별 1인당 폐기물 배출량 데이터에서 (1) 가장 높은 지역과 낮은 지역의 차이, (2) 연도별 변화 추세, (3) 배출량과 재활용률 사이의 관계를 각각 한 문장으로 설명해줘."*
+
+**포인트**: 구체적인 질문, 원하는 출력 형식, 데이터의 맥락을 명시하면 훨씬 정확한 답변을 얻습니다.
+
+</details>
+
+<hr />
+<h3 id="_10">🏆 도전 문제<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>4차시에서 다운로드한 데이터 또는 다른 공공데이터(예: 시도별 인구수)를 하나 더 구해서, 오늘 사용한 배출량 데이터와 <strong>연결</strong>해보세요.</p>
+<p>예를 들어: "인구 대비 배출량 비율" 또는 "인구밀도와 재활용률의 관계" 등 <strong>두 데이터셋을 결합한 새로운 인사이트</strong>를 1개 이상 문장으로 작성해보세요.</p>
+<hr />
+<h2 id="_11">🔗 다음 장 미리보기<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<p>지금까지 데이터를 <strong>찾고</strong>(4차시), <strong>탐색하여 인사이트를 발견</strong>했습니다(5차시).</p>
+<p>다음 6차시에서는 발견한 인사이트를 <strong>시각적으로 표현</strong>하는 방법을 배웁니다. 같은 데이터도 막대그래프, 꺾은선그래프, 파이차트 중 어떤 것을 선택하느냐에 따라 전달력이 완전히 달라집니다. 숫자를 <strong>눈에 보이는 이야기</strong>로 바꾸는 시간, 기대해주세요! 📊</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../javascripts/title-link.js"></script>
+      
+    
+  </body>
+</html>

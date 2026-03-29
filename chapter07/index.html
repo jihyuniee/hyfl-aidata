@@ -1,0 +1,1692 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="교육 공공데이터와 생성형 AI를 활용하여 실생활 문제를 발견하고, 팀 기반 아이디어 기획서를 완성하는 12차시 프로젝트 중심 교육자료입니다. 제8회 교육 공공데이터 AI 활용대회 참가를 목표로, 데이터 탐색부터 AI 솔루션 설계, 기획서 발표까지 전 과정을 단계별로 안내합니다.">
+      
+      
+        <meta name="author" content="Created with EduFlow">
+      
+      
+      
+        <link rel="prev" href="../chapter06/">
+      
+      
+        <link rel="next" href="../chapter08/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+    
+    
+      
+        <title>누가, 언제, 어떻게 쓸까 — 서비스 시나리오 설계 - 우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans KR";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-07" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복" class="md-header__button md-logo" aria-label="우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              누가, 언제, 어떻게 쓸까 — 서비스 시나리오 설계
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter01/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 1 - [1권] Part 1. 출발 — 데이터로 세상 보기
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter04/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 2 - [1권] Part 2. 탐색 — 데이터를 찾고 읽고 연결하기
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 3 - [2권] Part 3. 설계 — 아이디어를 서비스로 만들기
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter10/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 4 - [2권] Part 4. 완성 — 기획서를 쓰고, 발표하고, 제출하다
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복" class="md-nav__button md-logo" aria-label="우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    우리가 바꾼다 : 교육 공공데이터 × AI 아이디어 기획 완전정복
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 1 - [1권] Part 1. 출발 — 데이터로 세상 보기
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 1 - [1권] Part 1. 출발 — 데이터로 세상 보기
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    공공데이터, 이미 우리 곁에 있다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    데이터는 흐른다 — 수집에서 AI까지
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    우리 팀의 문제를 정의하라
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 2 - [1권] Part 2. 탐색 — 데이터를 찾고 읽고 연결하기
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 2 - [1권] Part 2. 탐색 — 데이터를 찾고 읽고 연결하기
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    교육 공공데이터, 어디에 뭐가 있을까
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    데이터가 말해주는 이야기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI는 여기서 어떻게 쓸 수 있을까
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 3 - [2권] Part 3. 설계 — 아이디어를 서비스로 만들기
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 3 - [2권] Part 3. 설계 — 아이디어를 서비스로 만들기
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    누가, 언제, 어떻게 쓸까 — 서비스 시나리오 설계
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    누가, 언제, 어떻게 쓸까 — 서비스 시나리오 설계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 이 장에서 배우는 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 핵심 개념
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 핵심 개념">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 1: 페르소나와 사용자 여정 맵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-moscow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 2: MoSCoW 기법과 엘리베이터 피치
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔨 따라하기 — 우리 팀 서비스 시나리오 설계
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기 — 우리 팀 서비스 시나리오 설계">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: 페르소나 카드 만들기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: 사용자 여정 맵 그리기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-moscow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 핵심 기능 브레인스토밍 &amp; MoSCoW 분류
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 엘리베이터 피치 작성
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: 팀원 피드백으로 다듬기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chatgpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 전체 코드 — ChatGPT 프롬프트 모음
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 주의할 점
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 점검하기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 다음 장 미리보기
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    생성형 AI, 기획의 날개를 달다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    데이터를 눈에 보이게 — 시각화의 힘
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 4 - [2권] Part 4. 완성 — 기획서를 쓰고, 발표하고, 제출하다
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 4 - [2권] Part 4. 완성 — 기획서를 쓰고, 발표하고, 제출하다
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PPT 15매, 구조가 답이다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    피드백으로 갈고닦기 — 기획서 최종 완성
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    무대 위의 3분 — 발표와 대회 제출
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 이 장에서 배우는 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 핵심 개념
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 핵심 개념">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 1: 페르소나와 사용자 여정 맵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-moscow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 2: MoSCoW 기법과 엘리베이터 피치
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔨 따라하기 — 우리 팀 서비스 시나리오 설계
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기 — 우리 팀 서비스 시나리오 설계">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: 페르소나 카드 만들기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: 사용자 여정 맵 그리기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-moscow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 핵심 기능 브레인스토밍 &amp; MoSCoW 분류
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 엘리베이터 피치 작성
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: 팀원 피드백으로 다듬기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chatgpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 전체 코드 — ChatGPT 프롬프트 모음
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 주의할 점
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 점검하기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 다음 장 미리보기
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="chapter-07">Chapter 07. 누가, 언제, 어떻게 쓸까 — 서비스 시나리오 설계<a class="headerlink" href="#chapter-07" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>Part 3. 설계 — 아이디어를 서비스로 만들기</strong> | ⏱️ 50분</p>
+</blockquote>
+<hr />
+<h2 id="_1">🎯 이 장에서 배우는 것<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>페르소나</strong>(가상 사용자)를 설정하고 <strong>사용자 여정 맵</strong>을 작성할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 서비스의 핵심 기능을 정의하고 <strong>MoSCoW 기법</strong>으로 우선순위를 정할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 한 문장 서비스 소개(<strong>엘리베이터 피치</strong>)를 작성할 수 있다</li>
+</ul>
+<hr />
+<h2 id="_2">📚 핵심 개념<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="1">개념 1: 페르소나와 사용자 여정 맵<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p><strong>1. 비유로 시작</strong></p>
+<blockquote>
+<p>🎭 영화 감독이 시나리오를 쓸 때 가장 먼저 하는 일은 <strong>주인공을 만드는 것</strong>입니다. "이 사람은 몇 살이고, 무엇을 좋아하고, 어떤 고민이 있지?" — 이 질문에 답하면 자연스럽게 이야기가 흘러가죠. 서비스 설계에서 <strong>페르소나</strong>가 바로 이 주인공이고, <strong>사용자 여정 맵</strong>이 그 주인공의 이야기 흐름입니다.</p>
+</blockquote>
+<p><strong>2. 정확한 정의</strong></p>
+<ul>
+<li><strong>페르소나(Persona)</strong>: 우리 서비스를 가장 대표적으로 사용할 <strong>가상의 사용자 프로필</strong>. 이름, 나이, 직업, 고민, 목표 등을 구체적으로 적는다.</li>
+<li><strong>사용자 여정 맵(User Journey Map)</strong>: 페르소나가 서비스를 <strong>발견 → 사용 → 문제 해결</strong>하기까지의 과정을 시간순으로 그린 지도.</li>
+</ul>
+<p><strong>3. 예시로 확인</strong></p>
+<p>"급식 메뉴 추천 앱"을 만든다고 가정해 봅시다.</p>
+<blockquote>
+<p><strong>페르소나 카드 예시</strong>
+- <strong>이름</strong>: 김하은 (중학교 2학년)
+- <strong>특징</strong>: 편식이 심함, 스마트폰 능숙
+- <strong>고민</strong>: "오늘 급식 맛있을까? 내가 싫어하는 반찬이면 어쩌지…"
+- <strong>목표</strong>: 미리 메뉴를 확인하고, 자기 취향에 맞는 대안을 찾고 싶다</p>
+</blockquote>
+<div class="mermaid">journey
+    title 김하은의 급식 앱 사용 여정
+    section 발견
+      친구가 앱을 추천해 줌: 3: 하은
+      앱 스토어에서 다운로드: 4: 하은
+    section 사용
+      오늘의 급식 메뉴 확인: 4: 하은
+      싫어하는 반찬 표시: 5: 하은
+      대체 메뉴 추천 받음: 5: 하은
+    section 해결
+      도시락 준비 여부 결정: 5: 하은
+      친구에게 앱 공유: 4: 하은</div>
+<blockquote>
+<p>💡 <strong>알아보기</strong>: 숫자(1~5)는 그 단계에서 사용자의 <strong>만족도</strong>를 나타냅니다. 낮은 숫자가 나오는 단계가 바로 우리가 <strong>개선해야 할 포인트</strong>예요!</p>
+</blockquote>
+<hr />
+<h3 id="2-moscow">개념 2: MoSCoW 기법과 엘리베이터 피치<a class="headerlink" href="#2-moscow" title="Permanent link">&para;</a></h3>
+<p><strong>1. 비유로 시작</strong></p>
+<blockquote>
+<p>🎒 소풍 가방에 모든 걸 넣을 수는 없잖아요? <strong>반드시 넣을 것</strong>(물, 도시락), <strong>넣으면 좋은 것</strong>(간식), <strong>여유 있으면 넣을 것</strong>(보드게임), <strong>이번엔 안 넣을 것</strong>(텐트)을 나누듯, 서비스 기능도 우선순위를 매겨야 합니다. 이게 <strong>MoSCoW 기법</strong>입니다.</p>
+</blockquote>
+<p><strong>2. 정확한 정의</strong></p>
+<ul>
+<li><strong>Must have</strong>: 없으면 서비스가 작동하지 않는 핵심 기능</li>
+<li><strong>Should have</strong>: 있으면 훨씬 좋은 중요 기능</li>
+<li><strong>Could have</strong>: 시간이 남으면 추가할 기능</li>
+<li><strong>Won't have (this time)</strong>: 이번에는 만들지 않을 기능</li>
+</ul>
+<div class="mermaid">graph LR
+    A["🔴 Must&lt;br/&gt;반드시 필요"] --&gt; B["🟠 Should&lt;br/&gt;있으면 좋음"]
+    B --&gt; C["🟡 Could&lt;br/&gt;여유 있으면"]
+    C --&gt; D["⚪ Won't&lt;br/&gt;이번엔 제외"]</div>
+<ul>
+<li><strong>엘리베이터 피치(Elevator Pitch)</strong>: 엘리베이터를 타고 내릴 때까지, 약 <strong>30초 안에</strong> 서비스를 설명하는 한 문장 소개.</li>
+</ul>
+<p><strong>3. 예시로 확인</strong></p>
+<blockquote>
+<p><strong>급식 추천 앱의 MoSCoW 분류</strong>
+- 🔴 <strong>Must</strong>: 오늘의 급식 메뉴 표시, 싫어하는 음식 필터링
+- 🟠 <strong>Should</strong>: AI 대체 메뉴 추천
+- 🟡 <strong>Could</strong>: 친구와 취향 비교
+- ⚪ <strong>Won't</strong>: 영양사와 실시간 채팅</p>
+<p><strong>엘리베이터 피치 공식</strong>
+"[대상 사용자]가 [겪는 문제]를 해결하기 위해, [서비스 이름]은 [핵심 기능]을 제공합니다."</p>
+</blockquote>
+<p><strong>예시</strong>: "편식이 심한 중학생이 급식 고민을 줄이기 위해, <strong>오늘뭐먹지</strong>는 취향 기반 급식 필터와 대체 메뉴 추천을 제공합니다."</p>
+<hr />
+<h2 id="_3">🔨 따라하기 — 우리 팀 서비스 시나리오 설계<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>🎯 <strong>실습 목표</strong>: 여러분의 서비스 아이디어에 대해 페르소나 → 여정 맵 → 기능 우선순위 → 엘리베이터 피치를 완성합니다.</p>
+</blockquote>
+<h3 id="step-1">Step 1: 페르소나 카드 만들기<a class="headerlink" href="#step-1" title="Permanent link">&para;</a></h3>
+<p>ChatGPT에 아래 프롬프트를 입력해 보세요.</p>
+<p><strong>코드 (프롬프트)</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>우리 서비스는 [서비스 설명]이야.
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>이 서비스를 가장 많이 쓸 것 같은 대표 사용자를 1명 만들어줘.
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>이름, 나이, 직업(학년), 특징, 고민, 목표를 포함해줘.
+</span></code></pre></div></p>
+<p><strong>실행 결과 (예시)</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>이름: 박준호 (고등학교 1학년)
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>특징: 수학을 어려워함, 유튜브로 공부하는 걸 좋아함
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>고민: &quot;인강은 너무 길고, 모르는 문제만 딱 물어볼 데가 없어&quot;
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>목표: 모르는 수학 문제를 사진 찍으면 바로 풀이를 보고 싶다
+</span></code></pre></div></p>
+<blockquote>
+<p>💡 ChatGPT의 결과를 <strong>그대로 쓰지 마세요!</strong> 여러분이 직접 수정하고 보완하는 과정이 핵심입니다.</p>
+</blockquote>
+<h3 id="step-2">Step 2: 사용자 여정 맵 그리기<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
+<p>노트나 화이트보드에 <strong>5단계</strong>로 나눠 그려 봅니다.</p>
+<div class="mermaid">graph LR
+    A["1️⃣ 발견&lt;br/&gt;어떻게 알게 되지?"] --&gt; B["2️⃣ 첫 사용&lt;br/&gt;처음 열면 뭘 보지?"]
+    B --&gt; C["3️⃣ 핵심 행동&lt;br/&gt;무엇을 하지?"]
+    C --&gt; D["4️⃣ 결과 확인&lt;br/&gt;문제가 해결됐나?"]
+    D --&gt; E["5️⃣ 재방문&lt;br/&gt;다시 쓸 이유가 있나?"]</div>
+<p>각 단계마다 <strong>페르소나의 감정</strong>(😊😐😢)과 <strong>생각</strong>을 적어 보세요.</p>
+<h3 id="step-3-moscow">Step 3: 핵심 기능 브레인스토밍 &amp; MoSCoW 분류<a class="headerlink" href="#step-3-moscow" title="Permanent link">&para;</a></h3>
+<ol>
+<li>포스트잇(또는 메모장)에 떠오르는 기능을 <strong>제한 없이</strong> 적는다 (3분)</li>
+<li>비슷한 기능끼리 <strong>묶는다</strong></li>
+<li>아래 질문으로 분류한다</li>
+</ol>
+<blockquote>
+<p>🤔 <strong>생각해보기</strong>
+- "이 기능이 없으면 서비스가 아예 안 되나?" → <strong>Must</strong>
+- "없어도 되지만 있으면 만족도가 크게 올라가나?" → <strong>Should</strong>
+- "있으면 재미있지만, 핵심은 아닌가?" → <strong>Could</strong>
+- "지금 우리 실력/시간으로 불가능한가?" → <strong>Won't</strong></p>
+</blockquote>
+<h3 id="step-4">Step 4: 엘리베이터 피치 작성<a class="headerlink" href="#step-4" title="Permanent link">&para;</a></h3>
+<p>아래 빈칸을 채워 한 문장을 완성하세요.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>[         ]가 [              ] 문제를 해결하기 위해,
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>[서비스 이름]은 [                    ]을/를 제공합니다.
+</span></code></pre></div>
+<p><strong>ChatGPT 활용 프롬프트</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>아래 정보로 엘리베이터 피치를 3가지 버전으로 만들어줘.
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>- 페르소나: [붙여넣기]
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>- Must 기능: [붙여넣기]
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>- 서비스 이름: [입력]
+</span></code></pre></div></p>
+<h3 id="step-5">Step 5: 팀원 피드백으로 다듬기<a class="headerlink" href="#step-5" title="Permanent link">&para;</a></h3>
+<p>완성된 피치를 <strong>소리 내어 읽어 봅니다</strong>. 30초 안에 끝나지 않으면 줄이세요!</p>
+<blockquote>
+<p>✏️ <strong>정리하기</strong>: 좋은 엘리베이터 피치는 세 가지를 담습니다 — <strong>누구를 위한 건지</strong>, <strong>어떤 문제를 해결하는지</strong>, <strong>어떻게 해결하는지</strong>.</p>
+</blockquote>
+<hr />
+<h2 id="chatgpt">📝 전체 코드 — ChatGPT 프롬프트 모음<a class="headerlink" href="#chatgpt" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># ============================================</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="c1"># 서비스 시나리오 설계 — ChatGPT 프롬프트 모음</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># 복사해서 ChatGPT에 붙여넣기 하세요!</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># ============================================</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1"># 1단계: 페르소나 생성</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="n">prompt_persona</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="s2">우리 서비스: [여기에 서비스 설명 입력]</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="s2">이 서비스의 대표 사용자 1명을 만들어줘.</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="s2">포함할 항목: 이름, 나이, 직업(학년), 특징 2가지, 고민, 목표</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="c1"># 2단계: 사용자 여정 맵 초안</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="n">prompt_journey</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="s2">위 페르소나가 우리 서비스를 쓰는 과정을</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="s2">&#39;발견 → 첫 사용 → 핵심 행동 → 결과 확인 → 재방문&#39;</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="s2">5단계로 나눠서, 각 단계별 행동과 감정을 알려줘.</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="c1"># 3단계: 엘리베이터 피치</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="n">prompt_pitch</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="s2">아래 정보로 엘리베이터 피치를 3가지 버전으로 만들어줘.</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="s2">30초 안에 말할 수 있는 길이로.</span>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="s2">- 페르소나: [붙여넣기]</span>
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="s2">- 핵심 기능(Must): [붙여넣기]</span>
+</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="s2">- 서비스 이름: [입력]</span>
+</span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a>
+</span><span id="__span-4-29"><a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="c1"># 사용법: 위 프롬프트의 [  ] 부분을 채워서 ChatGPT에 입력하세요!</span>
+</span><span id="__span-4-30"><a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;프롬프트가 준비되었습니다. ChatGPT에 붙여넣기 하세요!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>실행 결과</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>프롬프트가 준비되었습니다. ChatGPT에 붙여넣기 하세요!
+</span></code></pre></div></p>
+<hr />
+<h2 id="_4">⚠️ 주의할 점<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p><strong>1. 페르소나 ≠ 나 자신</strong>
+자기 자신을 페르소나로 설정하면 시야가 좁아집니다. "나와 다른 사람도 이 서비스를 쓸까?"를 반드시 고민하세요.</p>
+<p><strong>2. Must에 기능을 너무 많이 넣지 마세요</strong>
+Must가 5개 이상이면 사실상 우선순위를 정하지 않은 것과 같습니다. <strong>최대 3개</strong>로 제한하세요.</p>
+<hr />
+<h2 id="_5">✅ 점검하기<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p><strong>1. (기본) 페르소나 카드에 반드시 포함해야 할 요소 4가지를 말해 보세요.</strong></p>
+<details><summary>정답 확인</summary>
+
+이름(또는 가명), 나이/직업(학년), 고민(불편한 점), 목표(원하는 것). 여기에 특징이나 행동 습관을 추가하면 더 좋습니다.
+
+</details>
+
+<p><strong>2. (응용) MoSCoW에서 'S'와 'C'의 차이를 급식 앱 예시로 설명해 보세요.</strong></p>
+<details><summary>정답 확인</summary>
+
+**Should**(AI 대체 메뉴 추천)는 없으면 사용자 만족도가 눈에 띄게 떨어지는 중요 기능이고, **Could**(친구와 취향 비교)는 없어도 서비스 핵심에는 영향이 적은 부가 기능입니다.
+
+</details>
+
+<p><strong>3. (심화·도전 문제) 같은 "급식 추천 앱"을 교사가 쓴다면, Must 기능이 어떻게 달라질까요? 페르소나를 새로 만들어 비교해 보세요.</strong></p>
+<details><summary>정답 확인</summary>
+
+교사 페르소나는 "알레르기 학생 관리", "영양 균형 통계 확인" 같은 기능이 Must가 될 수 있습니다. 학생에게는 Must였던 "싫어하는 반찬 필터링"이 교사에게는 Could로 내려갈 수 있죠. **같은 서비스라도 사용자가 바뀌면 우선순위가 완전히 달라집니다.**
+
+</details>
+
+<hr />
+<blockquote>
+<p>📌 <strong>이 장의 핵심 요약</strong>
+- <strong>페르소나</strong>: 가상의 대표 사용자를 구체적으로 만들면 설계 방향이 명확해진다
+- <strong>사용자 여정 맵</strong>: 발견 → 사용 → 해결까지 흐름을 그려 불편한 지점을 찾는다
+- <strong>MoSCoW</strong>: 기능을 Must/Should/Could/Won't로 나눠 핵심에 집중한다
+- <strong>엘리베이터 피치</strong>: 30초 안에 서비스를 설명하는 한 문장이 팀의 나침반이 된다</p>
+</blockquote>
+<hr />
+<h2 id="_6">🔗 다음 장 미리보기<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>Chapter 08</strong>에서는 오늘 설계한 시나리오를 바탕으로 <strong>화면을 직접 그려 봅니다</strong>. 종이 위에 스케치하는 <strong>와이어프레임</strong> 기법을 배우고, 사용자가 버튼을 누르면 어떤 화면으로 이동하는지 <strong>화면 흐름도</strong>를 완성합니다. 오늘 만든 페르소나 카드와 여정 맵을 꼭 가져오세요! 🎨</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../javascripts/title-link.js"></script>
+      
+    
+  </body>
+</html>
